@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Rick and Morty</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <section class="container">
+                <div class="row">
+                    <br>
+                    <h1 id='apiHeading'>Rick and Morty Database</h1>
+                </div>
+                <div class="row">
+                    <p id='pageLinks'><a href="#mainCharacters" rel="noopener noreferrer">Main Characters</a> | <a href="#recurringCharacters">Recurring Characters</a> | <a href="./episodes.html">Episodes</a></p>
+                </div>
+            </section>
+        </header>
+        <section class="container">
+            <div class="row">
+                <h3 id='mainCharacters'>MAIN CHARACTERS</h3>
+            </div>
+            <div class="row row-cols-md">
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image0" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character0Name'></h5>
+                            <p class="card-text" id='character0Text'></p>
+                            <button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#character0'>Episode List</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id='character0' tabindex="-1" aria-labelledby="character0ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id='modalTitle0'></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id='modalBody0'>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image1" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character1Name'></h5>
+                            <p class="card-text" id='character1Text'></p>
+                            <button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#character1'>Episode List</a>
+                        </div>
+                    </div>
+                    <div class="modal" id='character1' tabindex="-1" aria-labelledby="character1ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id='modalTitle1'></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id='modalBody1'>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image2" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character2Name'></h5>
+                            <p class="card-text" id='character2Text'></p>
+                            <button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#character2'>Episode List</a>
+                        </div>
+                    </div>
+                        <div class="modal" id='character2' tabindex="-1" aria-labelledby="character2ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id='modalTitle2'></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id='modalBody2'>
+                                        
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image3" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character3Name'></h5>
+                            <p class="card-text" id='character3Text'></p>
+                            <button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#character3'>Episode List</a>
+                            </div>
+                        </div>
+                            <div class="modal" id='character3' tabindex="-1" aria-labelledby="character3ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id='modalTitle3'></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id='modalBody3'>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image4" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character4Name'></h5>
+                            <p class="card-text" id='character4Text'></p>
+                            <button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#character4'>Episode List</a>
+                            </div>
+                        </div>
+                            <div class="modal" id='character4' tabindex="-1" aria-labelledby="character4ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id='modalTitle4'></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id='modalBody4'>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="row">
+                <h3 id='recurringCharacters'>RECURRING/OTHER CHARACTERS</h3>
+            </div>
+            <!-- ROW 1 -->
+            <div class="row row-cols-md">
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image5" src="">
+                        <div class="card-body">
+                            <!-- Abadango Cluster Princess -->
+                            <h5 class="card-title" id='character5Name'></h5>
+                            <p class="card-text" id='character5Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image6" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character6Name'></h5>
+                            <p class="card-text" id='character6Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image7" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character7Name'></h5>
+                            <p class="card-text" id='character7Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image8" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character8Name'></h5>
+                            <p class="card-text" id='character8Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image9" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character9Name'></h5>
+                            <p class="card-text" id='character9Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Row 2 -->
+            <div class="row row-cols-md">
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image10" src="">
+                        <div class="card-body">
+                            <!-- Albert Einstein -->
+                            <h5 class="card-title" id='character10Name'></h5>
+                            <p class="card-text" id='character10Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image11" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character11Name'></h5>
+                            <p class="card-text" id='character11Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image12" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character12Name'></h5>
+                            <p class="card-text" id='character12Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image13" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character13Name'></h5>
+                            <p class="card-text" id='character13Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image14" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character14Name'></h5>
+                            <p class="card-text" id='character14Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+<!-- Row 3 -->
+            <div class="row row-cols-md">
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image15" src="">
+                        <div class="card-body">
+                            <!-- Amish Cyborg -->
+                            <h5 class="card-title" id='character15Name'></h5>
+                            <p class="card-text" id='character15Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image16" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character16Name'></h5>
+                            <p class="card-text" id='character16Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image17" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character17Name'></h5>
+                            <p class="card-text" id='character17Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image18" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character18Name'></h5>
+                            <p class="card-text" id='character18Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image19" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character19Name'></h5>
+                            <p class="card-text" id='character19Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+<!-- Row 4 -->
+            <div class="row row-cols-md">
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image20" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character20Name'></h5>
+                            <p class="card-text" id='character20Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image21" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character21Name'></h5>
+                            <p class="card-text" id='character21Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image22" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character22Name'></h5>
+                            <p class="card-text" id='character22Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image23" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character23Name'></h5>
+                            <p class="card-text" id='character23Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image24" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character24Name'></h5>
+                            <p class="card-text" id='character24Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Row 5 -->
+            <div class="row row-cols-md">
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image25" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character25Name'></h5>
+                            <p class="card-text" id='character25Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image26" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character26Name'></h5>
+                            <p class="card-text" id='character26Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image27" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character27Name'></h5>
+                            <p class="card-text" id='character27Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image28" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character28Name'></h5>
+                            <p class="card-text" id='character28Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="card h-100">
+                        <img class="card-img-top" id="image29" src="">
+                        <div class="card-body">
+                            <h5 class="card-title" id='character29Name'></h5>
+                            <p class="card-text" id='character29Text'></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>2021 Kristen Oom</p>
+            <p>API powered by https://rickandmortyapi.com</p>
+            <p>Disclaimer: Data and images are used without claim of ownership and belong to their respective owners (Justin Roiland and Dan Harmon for Adult Swim)</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+        <script src="./script.js"></script>
+    </body>
+</html> 

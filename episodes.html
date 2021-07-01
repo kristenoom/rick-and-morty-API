@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Rick and Morty</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <section class="container">
+                <div class="row">
+                    <br>
+                    <h1 id='apiHeading'>Rick and Morty Database</h1>
+                </div>
+                <div class="row">
+                    <p id='pageLinks'><a href="./index.html#mainCharacters" rel="noopener noreferrer">Main Characters</a> | <a href="./index.html#recurringCharacters">Recurring Characters</a> | <a href="#episodes">Episodes</a></p>
+                </div>
+            </section>
+        </header>
+        <section class="container">
+            <div class="row">
+                <h3 id='episodes'>EPISODES</h3>
+                <h6>
+                    <a href='#season01'>Season 1</a> | <a href='#season02'>Season 2</a> | <a href='#season03'>Season 3</a> | <a href='#season04'>Season 4</a> 
+                </h6>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class='table-secondary'>
+                        <th colspan="3" id='season01'>Season 1</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Episode Name</th>
+                        <th scope="col">Air Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="episodeNum1"></td>
+                        <td id='episodeName1'></td>
+                        <td id='episodeDate1'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum2"></td>
+                        <td id='episodeName2'></td>
+                        <td id='episodeDate2'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum3"></td>
+                        <td id='episodeName3'></td>
+                        <td id='episodeDate3'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum4"></td>
+                        <td id='episodeName4'></td>
+                        <td id='episodeDate4'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum5"></td>
+                        <td id='episodeName5'></td>
+                        <td id='episodeDate5'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum6"></td>
+                        <td id='episodeName6'></td>
+                        <td id='episodeDate6'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum7"></td>
+                        <td id='episodeName7'></td>
+                        <td id='episodeDate7'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum8"></td>
+                        <td id='episodeName8'></td>
+                        <td id='episodeDate8'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum9"></td>
+                        <td id='episodeName9'></td>
+                        <td id='episodeDate9'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum10"></td>
+                        <td id='episodeName10'></td>
+                        <td id='episodeDate10'></td>
+                    </tr>
+                    <tr>
+                        <td id="episodeNum11"></td>
+                        <td id='episodeName11'></td>
+                        <td id='episodeDate11'></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr class='table-secondary'>
+                        <th colspan="3" id='season02'>Season 2</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Episode Name</th>
+                        <th scope="col">Air Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="s2episodeNum1"></td>
+                        <td id='s2episodeName1'></td>
+                        <td id='s2episodeDate1'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum2"></td>
+                        <td id='s2episodeName2'></td>
+                        <td id='s2episodeDate2'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum3"></td>
+                        <td id='s2episodeName3'></td>
+                        <td id='s2episodeDate3'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum4"></td>
+                        <td id='s2episodeName4'></td>
+                        <td id='s2episodeDate4'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum5"></td>
+                        <td id='s2episodeName5'></td>
+                        <td id='s2episodeDate5'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum6"></td>
+                        <td id='s2episodeName6'></td>
+                        <td id='s2episodeDate6'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum7"></td>
+                        <td id='s2episodeName7'></td>
+                        <td id='s2episodeDate7'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum8"></td>
+                        <td id='s2episodeName8'></td>
+                        <td id='s2episodeDate8'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum9"></td>
+                        <td id='s2episodeName9'></td>
+                        <td id='s2episodeDate9'></td>
+                    </tr>
+                    <tr>
+                        <td id="s2episodeNum10"></td>
+                        <td id='s2episodeName10'></td>
+                        <td id='s2episodeDate10'></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr class='table-secondary'>
+                        <th colspan="3" id='season03'>Season 3</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Episode Name</th>
+                        <th scope="col">Air Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="s3episodeNum1"></td>
+                        <td id='s3episodeName1'></td>
+                        <td id='s3episodeDate1'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum2"></td>
+                        <td id='s3episodeName2'></td>
+                        <td id='s3episodeDate2'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum3"></td>
+                        <td id='s3episodeName3'></td>
+                        <td id='s3episodeDate3'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum4"></td>
+                        <td id='s3episodeName4'></td>
+                        <td id='s3episodeDate4'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum5"></td>
+                        <td id='s3episodeName5'></td>
+                        <td id='s3episodeDate5'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum6"></td>
+                        <td id='s3episodeName6'></td>
+                        <td id='s3episodeDate6'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum7"></td>
+                        <td id='s3episodeName7'></td>
+                        <td id='s3episodeDate7'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum8"></td>
+                        <td id='s3episodeName8'></td>
+                        <td id='s3episodeDate8'></td>
+                    </tr>
+                    <tr>
+                        <td id="s3episodeNum9"></td>
+                        <td id='s3episodeName9'></td>
+                        <td id='s3episodeDate9'></td>
+                    </tr>
+                    <tr>
+                        <td id='s3episodeNum10'></td>
+                        <td id='s3episodeName10'></td>
+                        <td id='s3episodeDate10'></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr class='table-secondary'>
+                        <th colspan="3" id='season04'>Season 4</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Episode Name</th>
+                        <th scope="col">Air Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id='s4episodeNum1'></td>
+                        <td id='s4episodeName1'></td>
+                        <td id='s4episodeDate1'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum2"></td>
+                        <td id='s4episodeName2'></td>
+                        <td id='s4episodeDate2'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum3"></td>
+                        <td id='s4episodeName3'></td>
+                        <td id='s4episodeDate3'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum4"></td>
+                        <td id='s4episodeName4'></td>
+                        <td id='s4episodeDate4'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum5"></td>
+                        <td id='s4episodeName5'></td>
+                        <td id='s4episodeDate5'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum6"></td>
+                        <td id='s4episodeName6'></td>
+                        <td id='s4episodeDate6'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum7"></td>
+                        <td id='s4episodeName7'></td>
+                        <td id='s4episodeDate7'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum8"></td>
+                        <td id='s4episodeName8'></td>
+                        <td id='s4episodeDate8'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum9"></td>
+                        <td id='s4episodeName9'></td>
+                        <td id='s4episodeDate9'></td>
+                    </tr>
+                    <tr>
+                        <td id="s4episodeNum10"></td>
+                        <td id='s4episodeName10'></td>
+                        <td id='s4episodeDate10'></td>
+                    </tr>
+                </tbody>
+              </table>
+        </section>
+        <footer>
+            <p>2021 Kristen Oom</p>
+            <p>API powered by https://rickandmortyapi.com</p>
+            <p>Disclaimer: Data and images are used without claim of ownership and belong to their respective owners (Justin Roiland and Dan Harmon for Adult Swim)</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+        <script src="./script.js"></script>
+    </body>
+</html> 

@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'get-schwifty';
+    src: url('./assets/get_schwifty.ttf');
+}
+
+:root {
+    --rick: #97CE4C;
+    --morty: #e4a788;
+    --black: #44281d;
+    --gray: #6e6e6e;
+    --liteGray: #cecece;
+    --blue: #62a4ab;
+    --yellow: #f9bf1e;
+
+    --font: 'get-schwifty';
+    --fontCharName: 'Alegreya Sans SC', sans-serif;
+    --fontOne: 'Archivo', 'Barlow', sans-serif;
+    --fontTwo: 'Archivo Narrow', 'Barlow Condensed', sans-serif;
+
+  }
+  
+body {
+    align-content: center;
+    background-color: black;
+    color: white;
+}
+
+#apiHeading {
+    color: var(--blue);
+    font-family: var(--font);
+    font-size: 77px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 7px var(--rick), 0 0 7px var(--rick);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+}
+header p {
+    color: white;
+    font-family: var(--fontTwo);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header p a:link {
+    color: white;
+}
+
+header p a:visited {
+    color: white;
+}
+  
+.card {
+    background-color: var(--liteGray);
+    border-radius: 51px 26px 50px 25px;
+    border: solid 5px var(--rick);
+    /* width: 335px; */
+    max-width: 250px;
+}
+
+h3#mainCharacters, h3#recurringCharacters, h3#episodes {
+    font-family: var(--fontTwo);
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+img.card-img-top {
+    border-radius: 50px 25px 0px 0px;
+    /* border-top: solid 3px var(--black);
+    border-right: solid 3px var(--black);
+    border-left: solid 3px var(--black); */
+    margin-top: -1px;
+}
+
+h5 {
+    font-family: var(--fontCharName);
+    font-size: 26px;
+}
+
+.card p {
+    font-family: var(--fontOne);
+    font-size: 15px;
+}
+
+strong {
+    color: var(--gray);
+    font-family: var(--fontTwo);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button.btn {
+    font-family: var(--fontTwo);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.btn-warning {
+    background-color: var(--yellow);
+    color: black;
+}
+
+.modal-content {
+    background-color: var(--liteGray);
+    color: black;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+}
+
+
+/* EPISODES SECTION */
+h6 a {
+    font-family: var(--fontTwo);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+h6 a:link {
+    color: white;
+}
+
+h6 a:visited {
+    color: var(--rick);
+}
+table, thead, tbody, td {
+    color: white;
+}
+
+thead {
+    font-family: var(--fontOne);
+    text-transform: uppercase;
+}
+
+#season01, #season02, #season03, #season04 {
+    padding-top: 20px;
+    vertical-align: bottom;
+}
+
+tbody {
+    font-family: var(--fontTwo);
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--gray);
+    font-size: 11px;
+    margin-top:0;
+    margin-bottom: 0;
+}
